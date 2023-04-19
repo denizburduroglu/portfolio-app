@@ -9,11 +9,18 @@ export class AppComponent {
   title = 'portfolio-app';
 
   @ViewChild('myLogo') myLogo: any;
-
-  @HostListener('window:scroll', ['$event']) onScrollEvent($event: any) {
-    // Your scroll event handler here
-    // remove class of native element
-    this.myLogo.nativeElement.classList.remove('hidden');
+  @ViewChild('introduction') introduction: any;
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.myLogo?.nativeElement?.classList?.add('hidden');
+        } else {
+          this.myLogo?.nativeElement?.classList?.remove('hidden');
+        }
+      });
+    });
+    observer.observe(this.introduction.nativeElement);
   }
   
 }
