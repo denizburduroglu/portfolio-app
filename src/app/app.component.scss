@@ -1,9 +1,21 @@
+@import '/src/styles/variables.scss';
+
+
+// Root Container
+.root-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 110vh;
+  background-color: $secondary-color;
+}
+
 // Header
-.header {
+.nav-header {
   position: fixed;
   display: flex;
   width: 100%;
   padding: 0 1rem;
+  background-color: $secondary-color;
 }
 
 // Logo
@@ -42,8 +54,39 @@
   padding: 0;
 }
 
-// Body
-.body-page {
-  margin-top: 3rem;
-  padding: 1rem;
+// Sections
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $secondary-color;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $secondary-color;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $secondary-color;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $secondary-color;
 }
