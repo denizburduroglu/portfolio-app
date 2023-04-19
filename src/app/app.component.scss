@@ -1,0 +1,49 @@
+// Header
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+// Logo
+.logo-list {
+  height: 1.5rem;
+  padding: 0;
+}
+
+.logo-list li {
+  display: inline-block;
+  float: left;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: all 2s ease-in-out;
+  opacity: 1;
+  max-width: 1.5rem;
+}
+.logo-list.hidden li.spaced {
+  padding-left: 0;
+}
+.logo-list li.spaced {
+  padding-left: 0.5em;
+}
+
+.logo-list.hidden li.ghost {
+  opacity: 0;
+  max-width: 0;
+}
+
+// Navigation links
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  list-style: none;
+  padding: 0;
+}
+
+// Body
+.body-page {
+  margin-top: 3rem;
+  padding: 1rem;
+}

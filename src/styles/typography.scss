@@ -1,0 +1,42 @@
+/* Everything */
+* {
+  // set below to helvetica
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Headings */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Body text */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  margin-bottom: 16px;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-bottom: 16px;
+}
