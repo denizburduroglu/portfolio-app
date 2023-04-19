@@ -1,11 +1,9 @@
-@import '/src/styles/variables.scss';
-
+@import "/src/styles/variables.scss";
 
 // Root Container
 .root-container {
   display: flex;
   flex-direction: column;
-  min-height: 110vh;
   background-color: $secondary-color;
 }
 
@@ -15,7 +13,7 @@
   display: flex;
   width: 100%;
   padding: 0 1rem;
-  background-color: $secondary-color;
+  background-color: rgba($secondary-color, 0.5);
   box-sizing: border-box;
   flex: 1;
 }
@@ -71,7 +69,11 @@
 }
 
 // Sections
-.introduction, .about, .projects, .skills, .contact {
+.introduction,
+.about,
+.projects,
+.skills,
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,10 +83,35 @@
 }
 
 .about {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: $secondary-color;
+  background-color: $quaternary-color;
+}
+
+.contact {
+  .contact-form {
+    display: grid;
+    input,
+    textarea {
+      padding: 0.5rem;
+      border: 0;
+      border-radius: 0.25rem;
+      margin: 0.5rem 0;
+      &:focus {
+        outline: none;
+        border-color: $senary-color;
+      }
+    }
+  }
+}
+
+// Reusable components
+button {
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.25rem;
+  margin: 0.5rem 0;
+  background-color: $quaternary-color;
+  color: $secondary-color;
+  &:hover {
+    background-color: $quinary-color;
+  }
 }

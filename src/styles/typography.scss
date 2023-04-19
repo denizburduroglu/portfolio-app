@@ -1,7 +1,10 @@
+@import "variables";
 /* Everything */
 * {
   // set below to helvetica
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // set text color to primary color
+  color: $primary-color;
 }
 
 /* Headings */

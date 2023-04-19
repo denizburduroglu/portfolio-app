@@ -1,19 +1,33 @@
 // Main stuff
-$dark-green: #394375;
-$light-green: #B4B022;
-$light-grey: #F9F1BA;
-$light-orange: #ffbd41;
-$dark-orange: #EA5E2D;
+// $dark-green: #394375;
+// $light-green: #B4B022;
+// $light-grey: #F9F1BA;
+// $light-orange: #ffbd41;
+// $dark-orange: #EA5E2D;
 
-// Thinking about it
-$dark-grey: #4A4A4A;
-$dark-blue: #1A2B3C;
-$light-blue: #2E4E6E;
-$light-red: #E74C3C;
-$dark-red: #C0392B;
+// $dark-grey: #4A4A4A;
+// $dark-blue: #1A2B3C;
+// $light-blue: #2E4E6E;
+// $light-red: #E74C3C;
+// $dark-red: #C0392B;
+
+$dark-green: rgba(57, 67, 117, 1);
+$light-green: rgba(180, 176, 34, 1);
+$light-grey: rgba(249, 241, 186, 1);
+$light-orange: rgba(255, 189, 65, 1);
+$dark-orange: rgba(234, 94, 45, 1);
+
+// Not sure yet
+$dark-grey: rgba(74, 74, 74, 1);
+$dark-blue: rgba(26, 43, 60, 1);
+$light-blue: rgba(46, 78, 110, 1);
+$light-red: rgba(231, 76, 60, 1);
+$dark-red: rgba(192, 57, 43, 1);
+$white: rgba(255, 255, 255, 1);
 
 $primary-color: $dark-green;
 $secondary-color: $light-grey;
-$tertiary-color: $light-grey;
+$tertiary-color: $light-green;
 $quaternary-color: $light-orange;
 $quinary-color: $dark-orange;
+$senary-color: $white;
