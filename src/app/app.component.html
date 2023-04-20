@@ -34,21 +34,40 @@
     <h1>Deniz Burduroglu</h1>
     <p>I'm a Full-Stack Developer</p>
   </section>
-  <section #about class="about">
+  <section id="about" class="about">
     <p>This is about me</p>
   </section>
-  <section #skills class="skills">
+  <section id="skills" class="skills">
     <p>These are my skills</p>
   </section>
-  <section #projects class="projects">
+  <section id="projects" class="projects">
     <p>These are some of my projects</p>
   </section>
-  <section #contact class="contact">
-    <form class="contact-form">
+  <section id="contact" class="contact">
+    <!-- <form class="contact-form">
       <input type="text" placeholder="Name" />
       <input type="email" placeholder="Email" />
       <textarea placeholder="Message"></textarea>
       <button type="submit">Send</button>
-    </form>
+    </form> -->
+    <div class="container">
+      <h1>FormSubmit Demo</h1>
+      <form target="_blank" action="https://formsubmit.co/denizburduroglu@gmail.com" method="POST">
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="col">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+      </form>
+    </div>
   </section>
 </div>
