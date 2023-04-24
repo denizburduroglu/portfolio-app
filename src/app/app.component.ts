@@ -7,9 +7,11 @@ import { Component, HostListener, ViewChild } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-app';
+  isShowMobileNavList = false;
 
   @ViewChild('myLogo') myLogo: any;
   @ViewChild('introduction') introduction: any;
+
   ngAfterViewInit() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -22,5 +24,4 @@ export class AppComponent {
     });
     observer.observe(this.introduction.nativeElement);
   }
-  
 }

@@ -46,23 +46,40 @@
 }
 
 // Navigation links
-.nav-list {
+.nav-list-container {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  list-style: none;
-  padding: 0;
   flex: 1;
-  li {
-    padding: 0 0.5rem;
-    a {
-      color: $primary-color;
-      text-decoration: none;
-      // font-weight: 700;
-      // font-size: 1.5rem;
-      transition: all 0.5s ease-in-out;
-      &:hover {
-        color: $quaternary-color;
+  // Hamburger
+  .hamburger {
+    visibility: hidden;
+    display: flex;
+    align-self: center;
+    &:hover {
+      background-color: $quaternary-color;
+    }
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 0 0.5rem;
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        // font-weight: 700;
+        // font-size: 1.5rem;
+        transition: all 0.25s ease-in-out;
+        &:hover {
+          color: $quaternary-color;
+        }
       }
     }
   }
@@ -80,6 +97,12 @@
   align-items: center;
   min-height: 100vh;
   background-color: $secondary-color;
+}
+
+.about,
+.skills,
+.contact {
+  min-height: 50vh;
 }
 
 .skills {
@@ -118,24 +141,66 @@
 // Contact links
 .contact-links-container {
   position: fixed;
-    bottom: 0;
-    ul {
-      list-style: none;
-      padding-left: 2rem;
-      margin-bottom: 0;
-      li {
-        padding: .2rem 0;
-      }
+  bottom: 0;
+  ul {
+    list-style: none;
+    padding-left: 2rem;
+    margin-bottom: 0;
+    li {
+      padding: 0.2rem 0;
     }
+  }
 
-    .line-item {
-      padding: 0 !important;
-      hr {
-        border: none;
-        border-top: 75px solid $primary-color;
-        width: 1px;
-        height: 0;
-        margin: 0 auto;
-      }
+  .line-item {
+    padding: 0 !important;
+    hr {
+      border: none;
+      border-top: 75px solid $primary-color;
+      width: 1px;
+      height: 0;
+      margin: 0 auto;
     }
+  }
+}
+
+// Footer
+.footer {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: $primary-color;
+  p {
+    color: $senary-color;
+  }
+}
+
+// Mobile View
+@media screen and (max-width: 768px) {
+  // Mobile Nav
+  #hamburger {
+    visibility: inherit;
+  }
+
+  #nav-list {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 2rem;
+  }
+
+  .mobile-nav-list {
+    display: flex !important;
+    
+  }
+
+  // Footer
+  .footer {
+    display: flex;
+  }
+  .contact-links-container {
+    display: none;
+  }
 }
