@@ -23,7 +23,11 @@
     <!-- List of Navigation routerlinks -->
 
     <div class="nav-list-container">
-      <div id="hamburger" class="hamburger" (click)="isShowMobileNavList = !isShowMobileNavList">
+      <div
+        id="hamburger"
+        class="hamburger"
+        (click)="isShowMobileNavList = !isShowMobileNavList"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1.5rem"
@@ -38,7 +42,11 @@
           />
         </svg>
       </div>
-      <ul id="nav-list" [ngClass]="{ 'mobile-nav-list' : isShowMobileNavList }" class="nav-list">
+      <ul
+        id="nav-list"
+        [ngClass]="{ 'mobile-nav-list': isShowMobileNavList }"
+        class="nav-list"
+      >
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -51,6 +59,44 @@
     <p>Hi, my name is</p>
     <h1>Deniz Burduroglu</h1>
     <p>I'm a Full-Stack Developer</p>
+    <div>
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(57, 67, 117, 1)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(57, 67, 117, 1)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(57, 67, 117, 1)"
+          />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255, 189, 65, 1)" />
+        </g>
+      </svg>
+    </div>
   </section>
   <section id="about" class="about">
     <p>This is about me</p>
