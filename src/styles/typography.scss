@@ -1,26 +1,51 @@
 @import "variables";
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Everything */
 * {
   // set below to helvetica
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   // set text color to primary color
   color: $primary-color;
 }
 
 /* Headings */
 h1 {
+  font-family: "Roboto", sans-serif;
   font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 h2 {
+  font-family: "Roboto", sans-serif;
   font-size: 1.75rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 h3 {
+  font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
